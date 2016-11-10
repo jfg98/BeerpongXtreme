@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appRed">
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/zurueck"
+        android:id="@+id/retry"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_weight="0.34"
+        android:scaleType="fitCenter"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/resume"
+        android:layout_toEndOf="@+id/resume" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/play"
+        android:id="@+id/resume"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_weight="0.39"
+        android:scaleType="fitCenter"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

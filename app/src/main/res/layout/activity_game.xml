@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="0dp"
+    android:background="@drawable/tisch_streifen">
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/pause"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/pause"
+        android:scaleType="fitCenter"
+        android:backgroundTint="@android:color/transparent" />
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/musik"
+        android:src="@drawable/musik_off"
+        android:scaleType="fitCenter"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_below="@+id/container"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/tisch"
+        android:id="@+id/container"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/pause">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/cup5"
+            android:src="@drawable/redcup"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/redcup"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/cup5"
+            android:layout_toEndOf="@+id/cup5"
+            android:id="@+id/cup4" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/redcup"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/cup5"
+            android:layout_toStartOf="@+id/cup5"
+            android:id="@+id/cup6" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/redcup"
+            android:id="@+id/cup2"
+            android:layout_alignTop="@+id/cup3"
+            android:layout_toRightOf="@+id/cup3"
+            android:layout_toEndOf="@+id/cup3" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/redcup"
+            android:id="@+id/cup3"
+            android:layout_marginBottom="31dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginStart="23dp"
+            android:layout_alignBottom="@+id/cup1"
+            android:layout_alignLeft="@+id/cup6"
+            android:layout_alignStart="@+id/cup6" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/redcup"
+            android:layout_marginTop="15dp"
+            android:id="@+id/cup1"
+            android:layout_below="@+id/cup5"
+            android:layout_toRightOf="@+id/cup6"
+            android:layout_toEndOf="@+id/cup6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/versucheAnzahl"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/appRed" />
+
+        <ImageView
+            app:srcCompat="@drawable/ventilator"
+            android:id="@+id/ventilator"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:visibility="invisible"
+            android:layout_marginBottom="140dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/versuche"
+            android:id="@+id/versuche"
+            android:scaleType="fitCenter"
+            android:layout_width="75dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/cup4"
+            android:layout_toEndOf="@+id/cup4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/promille"
+            android:textColor="@color/appRed"
+            android:fontFamily="serif-monospace"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ProgressBar
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/progress_drawable"
+            android:layout_width="30dp"
+            android:visibility="invisible"
+            android:id="@+id/alkoholpegel"
+            android:layout_height="450dp"
+            android:layout_above="@+id/promille"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginEnd="24dp" />
+
+        <ImageView
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/team_rot"
+            android:id="@+id/team"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_width="100dp"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/home"
+        android:src="@drawable/home"
+        android:scaleType="fitCenter"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

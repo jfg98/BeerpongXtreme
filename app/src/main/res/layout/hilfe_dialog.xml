@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/background_light"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/hilfeLabel"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/hilfelogo"
+        android:padding="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/erklärung"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/hilfeLabel"
+        android:layout_alignLeft="@+id/hilfeLabel"
+        android:layout_alignStart="@+id/hilfeLabel"
+        android:layout_alignRight="@+id/hilfeLabel"
+        android:layout_alignEnd="@+id/hilfeLabel"
+        android:layout_height="200dp" />
+
+    <ImageButton
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:id="@+id/zurueck"
+        android:src="@drawable/zurueckbutton"
+        android:backgroundTint="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:layout_below="@+id/erklärung"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
+

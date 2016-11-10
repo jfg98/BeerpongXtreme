@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/finishedImage"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/punktzahl"
+        android:textSize="30sp"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/finishedImage"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textStyle="bold"
+        android:textColor="@color/appRed"
+        android:fontFamily="serif-monospace" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/gebrauchte_versuche"
+        android:scaleType="fitCenter"
+        android:id="@+id/benötigteversuche"
+        android:layout_alignBottom="@+id/punktzahl"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/spieler_name"
+        android:maxLength="10"
+        android:hint="@string/nameEingeben"
+        android:textColorLink="@color/colorAccent"
+        android:layout_below="@+id/punktzahl"
+        android:layout_alignRight="@+id/punktzahl"
+        android:layout_alignEnd="@+id/punktzahl"
+        android:layout_marginTop="10dp" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/home"
+        android:id="@+id/homeButton"
+        android:scaleType="fitCenter"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_alignTop="@+id/saveHighscore"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="86dp" />
+
+    <ImageButton
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/button_speichern"
+        android:id="@+id/saveHighscore"
+        android:backgroundTint="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:layout_below="@+id/spieler_name"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/name"
+        android:id="@+id/name"
+        android:layout_above="@+id/saveHighscore"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

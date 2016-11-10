@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Beerpong Xtreme</string>
+    <string name="rang">"Rang          "</string>
+    <string name="name">"Name          "</string>
+    <string name="punkte">"Versuche"</string>
+    <string name="MainActivityHomebutton">Go home mate, you\'re drunk. This is the homepage</string>
+    <string name="HighscoreGespeichert">Highscore gespeichert</string>
+    <string name="HighscoreZuSchlecht">zu schlecht</string>
+    <string name="nameEingeben">Name eingeben</string>
+    <string name="NoName">No Name</string>
+    <string name="alkoholikerHilfeParcours">
+        1. Siehst du die 6 Becher am oberen Bildschirmrand und den Ball am unteren Bildschirmrand? \n\n
+        2. Siehst du vielleicht auch noch ein Hindernis? \n\n
+        3. Nimm deinen Finger und wische den Ball in die Richtung in die er fliegen soll. \n\n
+        4. Finde heraus, wie du die Hindernisse umgehen kannst. Mal musst du es schaffen, dass der Ball
+        an ihnen vorbei kommt, mal musst du sie durch ein Portal bringen oder aber schauen, dass der Wind den Ball nicht weg weht. \n\n
+        5. Spiele dich so durch die Levels. Du erreichst das nächste Level, in dem die 6 Becher in einem Level getroffen hast. \n\n
+        6. Ziel ist es, so wenige Versuche wie möglich zu benötigen.
+        \n\n
+        Hier noch eine <b>Einschätzung deines Alkohollevels:</b> \n
+        <i>36-56</i> Würfe: Berufsalki \n
+        <i>57-66</i> Würfe: Suffkopf \n
+        <i>67-76</i> Würfe: Flaschenkind \n
+        <i>77-86</i> Würfe: Schluckspecht \n
+        <i>87-96</i> Würfe: Partytrinker \n
+        <i>97 +</i>  Würfe: Genussmensch
+    </string>
+    <string name="alkoholikerHilfeSuff">
+        <b>Einzelspieler:</b> \n
+        1. Siehst du die 6 Becher am oberen Bildschirmrand und den Ball am unteren Bildschirmrand? \n\n
+        2. Nimm deinen Finger und wische den Ball in die Richtung in die er fliegen soll. \n\n
+        3. Kleiner Tipp: Ziel ist es, die Becher zu treffen. \n\n
+        4. Wenn du getroffen hast, musst du trinken. \n\n
+
+        <b>Mehrspieler:</b> \n
+        1. Seht ihr die 6 Becher am oberen Bildschirmrand und den Ball am unteren Bildschirmrand? \n\n
+        2. Nehmt eure Finger und wischt den Ball in die Richtung in die er fliegen soll. \n\n
+        3. Kleiner Tipp: Ziel ist es, die Becher zu treffen. \n\n
+        4. Wenn einer von euch getroffen hat, muss der Gegenspieler trinken. (Info am Rande: wer zuerst betrunken ist, hat verloren).
+    </string>
+    <string name="alkoholikerHilfeStart">
+        Entscheide dich, ob du dich durch den <b>Parcours</b> kämpfst, oder ob du doch lieber im <b>Sauf-Modus</b> - alleine oder mit Freunden - dich der Biersucht hingibst.
+        \n\n
+
+        Und jetzt: VIEL SPAß BEIM SPIELEN UND BEIM TRINKEN!
+    </string>
+
+    <string name="promille"><b> ‰</b></string>
+    <string name="erneutEingeben">You had one Job! Tätige alle Angaben, Schluckspecht!</string>
+    <string name="angefangeneSpiele">Angefangene Spiele:</string>
+    <string name="abgebrocheneSpiele">Abgebrochene Spiele:</string>
+    <string name="eins">1</string>
+    <string name="zwei">2</string>
+    <string name="drei">3</string>
+    <string name="vier">4</string>
+    <string name="fünf">5</string>
+    <string name="credits">
+        \n
+        Version 1.1 (a111) \n
+        \u00A9 ExtremeBeerpong 2016 \n
+        All rights reserved \n\n
+
+        Team: \n
+        Andreas K. \n
+        Jon G. \n
+        Christiane H. \n \n
+        Unter der Leitung von: \n
+        Daniel H.
+
+    </string>
+
+</resources>

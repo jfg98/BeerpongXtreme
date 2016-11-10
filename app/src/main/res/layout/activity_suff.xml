@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.gehrung.beerpongxtreme.Parcours"
+    android:background="@drawable/tisch">
+
+    <ImageView
+        android:id="@+id/sufflogo"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/sufflogo" />
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/musik"
+        android:src="@drawable/musik_off"
+        android:scaleType="fitCenter"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_alignTop="@+id/hilfe"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/hilfe"
+        android:src="@drawable/hilfe"
+        android:scaleType="fitCenter"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@android:color/transparent" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/home"
+        android:src="@drawable/home"
+        android:scaleType="fitCenter"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/sufflogo"
+        android:layout_alignEnd="@+id/sufflogo"
+        android:backgroundTint="@android:color/transparent" />
+
+    <ImageButton
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:id="@+id/foreveralone"
+        android:src="@drawable/foreveralone"
+        android:scaleType="fitCenter"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_below="@+id/sufflogo"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:id="@+id/partysaufen"
+        android:src="@drawable/partysaufen"
+        android:scaleType="fitCenter"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_marginBottom="93dp"
+        android:layout_above="@+id/musik"
+        android:layout_alignLeft="@+id/foreveralone"
+        android:layout_alignStart="@+id/foreveralone" />
+
+</RelativeLayout>

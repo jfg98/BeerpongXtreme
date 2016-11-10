@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/background_light"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:id="@+id/logoLabel"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"
+        android:padding="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/abgebrocheneSpiele"
+        android:id="@+id/abgebrocheneSpieleTextView"
+        android:layout_marginTop="41dp"
+        android:layout_below="@+id/angefangeneSpieleTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/abgebrocheneSpiele"
+        android:layout_alignBottom="@+id/abgebrocheneSpieleTextView"
+        android:layout_alignRight="@+id/angefangeneSpiele"
+        android:layout_alignEnd="@+id/angefangeneSpiele"
+        android:textColor="@color/appRed"
+        android:textStyle="normal|bold"
+        android:textSize="24sp"
+        android:fontFamily="serif-monospace" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/angefangeneSpiele"
+        android:id="@+id/angefangeneSpieleTextView"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/logoLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/angefangeneSpiele"
+        android:layout_above="@+id/abgebrocheneSpieleTextView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/appRed"
+        android:textStyle="normal|bold"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/credits"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/abgebrocheneSpieleTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/zurueck"
+        android:text="@string/credits"
+        android:textAlignment="center"
+        android:scrollbars="vertical" />
+
+    <ImageButton
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:id="@+id/zurueck"
+        android:src="@drawable/zurueckbutton"
+        android:backgroundTint="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

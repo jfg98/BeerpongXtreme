@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/rechner_geschlecht"
+            android:id="@+id/geschlechtLabel"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="13dp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/rechner_becherinhalt"
+            android:id="@+id/becherinhaltLabel"
+            android:layout_marginTop="18dp"
+            android:layout_below="@+id/gewichtLabel"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/gewicht"
+            android:layout_alignBottom="@+id/gewichtLabel"
+            android:layout_toRightOf="@+id/alkoholgehaltLabel"
+            android:layout_toEndOf="@+id/alkoholgehaltLabel" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/rechner_alkoholgehalt"
+            android:id="@+id/alkoholgehaltLabel"
+            android:layout_marginTop="22dp"
+            android:layout_below="@+id/becherinhaltLabel"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/alkoholgehalt"
+            android:layout_alignBottom="@+id/alkoholgehaltLabel"
+            android:layout_toRightOf="@+id/alkoholgehaltLabel"
+            android:layout_toEndOf="@+id/alkoholgehaltLabel" />
+
+        <ImageButton
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/playbutton"
+            android:id="@+id/playbutton"
+            android:backgroundTint="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:layout_width="200dp"
+            android:layout_below="@+id/alkoholgehaltLabel"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/becherinhalt"
+            android:layout_above="@+id/alkoholgehaltLabel"
+            android:layout_alignLeft="@+id/gewicht"
+            android:layout_alignStart="@+id/gewicht" />
+
+        <ImageButton
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/zurueckbutton"
+            android:id="@+id/zurueck"
+            android:backgroundTint="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:layout_below="@+id/alkoholgehaltLabel"
+            android:layout_alignLeft="@+id/playbutton"
+            android:layout_alignStart="@+id/playbutton"
+            android:layout_marginTop="85dp" />
+
+        <Spinner
+            android:layout_height="wrap_content"
+            android:id="@+id/geschlechtspinner"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/geschlechtLabel"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/rechner_gewicht"
+            android:id="@+id/gewichtLabel"
+            android:layout_marginTop="14dp"
+            android:layout_below="@+id/geschlechtspinner"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+    </RelativeLayout>
+</LinearLayout>
